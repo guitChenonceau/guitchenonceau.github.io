@@ -95,6 +95,7 @@ h1 {
         border-radius: 10px;
         /* Smooth zoom */
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
     }
 
         /* 🔥 HOVER EFFECT (this is the key part) */
@@ -128,7 +129,7 @@ h1 {
 /* Contact button */
 .contact-button {
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 5px;
     font-size: 1.1rem;
 }
 
@@ -186,5 +187,92 @@ h1 {
 
     .side-images img {
         width: 42%;
+    }
+    .signature {
+        margin-top: 15px;
+        font-style: italic;
+        font-size: 1rem;
+        opacity: 0.85;
+    }
+    @media (max-width: 700px) {
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)), url("images/background.jpg") no-repeat center center;
+            background-size: cover;
+        }
+
+        .top-bar {
+            padding: 12px 12px 0 12px;
+        }
+
+        .language-switch {
+            text-align: right;
+        }
+
+            .language-switch button {
+                margin-left: 6px;
+                padding: 7px 12px;
+                font-size: 0.85rem;
+            }
+
+        .container {
+            padding: 12px 14px 30px 14px;
+        }
+
+        .logo {
+            max-width: 320px;
+            margin: 8px auto 10px auto;
+        }
+
+        h1 {
+            font-size: 1.9rem;
+            margin-bottom: 18px;
+        }
+
+        .content-grid {
+            grid-template-columns: 1fr;
+            gap: 18px;
+        }
+
+        .text-content {
+            font-size: 1rem;
+            line-height: 1.6;
+            padding: 18px 16px;
+        }
+
+            .text-content p {
+                margin-bottom: 16px;
+            }
+
+        .note {
+            margin-top: 18px;
+            font-size: 0.95rem;
+        }
+
+        .signature {
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        .contact-button {
+            margin-top: 8px;
+            font-size: 1rem;
+            padding: 10px 18px;
+        }
+
+        .side-images {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+            .side-images img {
+                width: 30%;
+                max-width: 95px;
+            }
+
+                .side-images img:hover {
+                    transform: scale(1.15);
+                }
     }
 }
