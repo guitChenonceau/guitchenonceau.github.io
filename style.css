@@ -229,11 +229,13 @@ h1 {
         }
 
         .content-grid {
-            grid-template-columns: 1fr;
-            gap: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
         }
 
         .text-content {
+            order: 1;
             font-size: 1rem;
             line-height: 1.6;
             padding: 18px 16px;
@@ -254,20 +256,29 @@ h1 {
         }
 
         .contact-button {
+            display: inline-block;
             margin-top: 8px;
             font-size: 1rem;
             padding: 10px 18px;
         }
 
+        .side-images-left {
+            order: 2;
+        }
+
+        .side-images-right {
+            order: 3;
+        }
+
         .side-images {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 10px;
+            justify-items: center;
         }
 
             .side-images img {
-                width: 30%;
+                width: 100%;
                 max-width: 95px;
             }
 
