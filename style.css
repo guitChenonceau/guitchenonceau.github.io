@@ -254,11 +254,15 @@ h1 {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
         justify-items: center;
+        width: 100%;
+        margin: 0 auto;
     }
 
         .side-images img {
             width: 100%;
             max-width: 95px;
+            display: block;
+            margin: 0 auto;
         }
 
             .side-images img:hover {
