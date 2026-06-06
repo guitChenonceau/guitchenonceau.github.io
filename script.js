@@ -11,6 +11,7 @@
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightbox-img");
     const galleryImages = document.querySelectorAll(".side-images img");
+    const videoLink = document.getElementById("video-link");
 
     function setLanguage(lang) {
         if (lang === "fr") {
@@ -29,6 +30,8 @@
 
             signature.textContent = "— Hugo Breton";
             contactButton.textContent = "Me contacter";
+            videoLink.textContent =
+                "Voir l'une de mes guitares en action";
         } else {
             document.documentElement.lang = "en";
 
@@ -45,6 +48,8 @@
 
             signature.textContent = "— Hugo Breton";
             contactButton.textContent = "Contact Me";
+            videoLink.textContent =
+                "Watch one of my guitars in action";
         }
     }
 

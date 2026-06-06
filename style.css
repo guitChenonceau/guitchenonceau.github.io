@@ -269,4 +269,18 @@ h1 {
                 transform: none;
                 box-shadow: none;
             }
+    .video-link {
+        margin-top: 15px;
+        font-size: 1rem;
+    }
+
+        .video-link a {
+            color: white;
+            text-decoration: underline;
+            transition: opacity 0.3s ease;
+        }
+
+            .video-link a:hover {
+                opacity: 0.8;
+            }
 }
